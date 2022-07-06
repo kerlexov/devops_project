@@ -1,69 +1,72 @@
 version: '3.9'
 services:
 
-  wordpress:
+  wordpress-prod:
     # default port 9000 (FastCGI)
     image: wordpress:5-fpm
-    container_name: wp-wordpress
+    container_name: wordpress-prod
     env_file:
-      - .env
+      - .env.prod
     restart: unless-stopped
     networks:
-      - wordpress
+      - wordpress-prod
     depends_on:
-      - database
+      - database-prod
     volumes:
-      - ${WORDPRESS_LOCAL_HOME}:/var/www/html
+      - ${WORDPRESS_LOCAL_HOME_PROD}:/var/www/html
     environment:
-      - WORDPRESS_DB_HOST=${WORDPRESS_DB_HOST}
-      - WORDPRESS_DB_NAME=${WORDPRESS_DB_NAME}
-      - WORDPRESS_DB_USER=${WORDPRESS_DB_USER}
-      - WORDPRESS_DB_PASSWORD=${WORDPRESS_DB_PASSWORD}
+      - WORDPRESS_DB_HOST=${WORDPRESS_DB_HOST_PROD}
+      - WORDPRESS_DB_NAME=${WORDPRESS_DB_NAME_PROD}
+      - WORDPRESS_DB_USER=${WORDPRESS_DB_USER_PROD}
+      - WORDPRESS_DB_PASSWORD=${WORDPRESS_DB_PASSWORD_PROD}
 
-  database:
+  database-prod:
     # default port 3306
     #image: mysql:5.7
-    # mac version of mysql
+    # version of mysql which supports M1 apple chip
     image: mysql/mysql-server:8.0.23
-    container_name: wp-database
+    container_name: database-prod
     env_file:
-      - .env
+      - .env.prod
     restart: unless-stopped
     networks:
-      - wordpress
+      - wordpress-prod
     environment:
-      - MYSQL_DATABASE=${MYSQL_DATABASE}
-      - MYSQL_USER=${MYSQL_USER}
-      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
-      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=${MYSQL_DATABASE_PROD}
+      - MYSQL_USER=${MYSQL_USER_PROD}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD_PROD}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD_PROD}
+      - MYSQL_TCP_PORT=${MYSQL_TCP_PORT_PROD}
     volumes:
-      - ${MYSQL_LOCAL_HOME}:/var/lib/mysql
+      - ${MYSQL_LOCAL_HOME_PROD}:/var/lib/mysql
     command:
       - '--default-authentication-plugin=mysql_native_password'
+    ports:
+      - "3307:3307"
 
-  nginx:
+  nginx-prod:
     # default ports 80, 443 - expose mapping as needed to host
     image: nginx:1
-    container_name: wp-nginx
+    container_name: nginx-prod
     env_file:
-      - .env
+      - .env.prod
     restart: unless-stopped
     networks:
-      - wordpress
+      - wordpress-prod
     depends_on:
-      - wordpress
+      - wordpress-prod
     ports:
       - "80:80"    # http
       - "443:443"   # https
     volumes:
-      - ${WORDPRESS_LOCAL_HOME}:/var/www/html
-      - ${NGINX_CONF}:/etc/nginx/conf.d/default.conf
-      - ${NGINX_SSL_CERTS}:/etc/ssl:ro
-      - ${NGINX_LOGS}:/var/log/nginx
+      - ${WORDPRESS_LOCAL_HOME_PROD}:/var/www/html
+      - ${NGINX_CONF_PROD}:/etc/nginx/conf.d/default.conf
+      - ${NGINX_SSL_CERTS_PROD}:/etc/ssl:ro
+      - ${NGINX_LOGS_PROD}:/var/log/nginx
       - ${NGINX_SNIPPETS}:/etc/nginx/snippets
-      - ${NGINX_SSL_CERTS}/dhparam.pem:/etc/nginx/dhparam.pem:rw
+      - ${NGINX_SSL_CERTS_PROD}/dhparam.pem:/etc/nginx/dhparam.pem:rw
 
 networks:
-  wordpress:
-    name: wp-wordpress
+  wordpress-prod:
+    name: wordpress-prod
     driver: bridge

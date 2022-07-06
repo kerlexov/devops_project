@@ -1,69 +1,72 @@
 version: '3.9'
 services:
 
-  wordpress:
+  wordpress-test:
     # default port 9000 (FastCGI)
     image: wordpress:5-fpm
-    container_name: wp-wordpress
+    container_name: wp-wordpress-test
     env_file:
-      - .env
+      - .env.test
     restart: unless-stopped
     networks:
-      - wordpress
+      - wordpress-test
     depends_on:
-      - database
+      - database-test
     volumes:
-      - ${WORDPRESS_LOCAL_HOME}:/var/www/html
+      - ${WORDPRESS_LOCAL_HOME_TEST}:/var/www/html
     environment:
-      - WORDPRESS_DB_HOST=${WORDPRESS_DB_HOST}
-      - WORDPRESS_DB_NAME=${WORDPRESS_DB_NAME}
-      - WORDPRESS_DB_USER=${WORDPRESS_DB_USER}
-      - WORDPRESS_DB_PASSWORD=${WORDPRESS_DB_PASSWORD}
+      - WORDPRESS_DB_HOST=${WORDPRESS_DB_HOST_TEST}
+      - WORDPRESS_DB_NAME=${WORDPRESS_DB_NAME_TEST}
+      - WORDPRESS_DB_USER=${WORDPRESS_DB_USER_TEST}
+      - WORDPRESS_DB_PASSWORD=${WORDPRESS_DB_PASSWORD_TEST}
 
-  database:
+  database-test:
     # default port 3306
     #image: mysql:5.7
-    # mac version of mysql
+    # version of mysql which supports M1 apple chip
     image: mysql/mysql-server:8.0.23
-    container_name: wp-database
+    container_name: wp-database-test
     env_file:
-      - .env
+      - .env.test
     restart: unless-stopped
     networks:
-      - wordpress
+      - wordpress-test
     environment:
-      - MYSQL_DATABASE=${MYSQL_DATABASE}
-      - MYSQL_USER=${MYSQL_USER}
-      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
-      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=${MYSQL_DATABASE_TEST}
+      - MYSQL_USER=${MYSQL_USER_TEST}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD_TEST}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD_TEST}
+      - MYSQL_TCP_PORT=${MYSQL_TCP_PORT_TEST}
     volumes:
-      - ${MYSQL_LOCAL_HOME}:/var/lib/mysql
+      - ${MYSQL_LOCAL_HOME_TEST}:/var/lib/mysql
     command:
       - '--default-authentication-plugin=mysql_native_password'
+    ports:
+      - "3306:3306"
 
-  nginx:
+  nginx-test:
     # default ports 80, 443 - expose mapping as needed to host
     image: nginx:1
-    container_name: wp-nginx
+    container_name: wp-nginx-test
     env_file:
-      - .env
+      - .env.test
     restart: unless-stopped
     networks:
-      - wordpress
+      - wordpress-test
     depends_on:
-      - wordpress
+      - wordpress-test
     ports:
-      - "80:80"    # http
-      - "443:443"   # https
+      - "8080:80"    # http
+      - "8443:443"   # https
     volumes:
-      - ${WORDPRESS_LOCAL_HOME}:/var/www/html
-      - ${NGINX_CONF}:/etc/nginx/conf.d/default.conf
-      - ${NGINX_SSL_CERTS}:/etc/ssl:ro
-      - ${NGINX_LOGS}:/var/log/nginx
+      - ${WORDPRESS_LOCAL_HOME_TEST}:/var/www/html
+      - ${NGINX_CONF_TEST}:/etc/nginx/conf.d/default.conf
+      - ${NGINX_SSL_CERTS_TEST}:/etc/ssl:ro
+      - ${NGINX_LOGS_TEST}:/var/log/nginx
       - ${NGINX_SNIPPETS}:/etc/nginx/snippets
-      - ${NGINX_SSL_CERTS}/dhparam.pem:/etc/nginx/dhparam.pem:rw
+      - ${NGINX_SSL_CERTS_TEST}/dhparam.pem:/etc/nginx/dhparam.pem:rw
 
 networks:
-  wordpress:
-    name: wp-wordpress
+  wordpress-test:
+    name: wp-wordpress-test
     driver: bridge
