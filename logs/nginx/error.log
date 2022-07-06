@@ -1,0 +1,441 @@
+2022/07/01 23:53:24 [notice] 1#1: using the "epoll" event method
+2022/07/01 23:53:24 [notice] 1#1: nginx/1.23.0
+2022/07/01 23:53:24 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/07/01 23:53:24 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2022/07/01 23:53:24 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/07/01 23:53:24 [notice] 1#1: start worker processes
+2022/07/01 23:53:24 [notice] 1#1: start worker process 29
+2022/07/01 23:53:24 [notice] 1#1: start worker process 30
+2022/07/01 23:53:24 [notice] 1#1: start worker process 31
+2022/07/01 23:53:24 [notice] 1#1: start worker process 32
+2022/07/01 23:53:24 [notice] 1#1: start worker process 33
+2022/07/01 23:57:42 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/07/01 23:57:42 [notice] 30#30: gracefully shutting down
+2022/07/01 23:57:42 [notice] 30#30: exiting
+2022/07/01 23:57:42 [notice] 31#31: gracefully shutting down
+2022/07/01 23:57:42 [notice] 31#31: exiting
+2022/07/01 23:57:42 [notice] 32#32: gracefully shutting down
+2022/07/01 23:57:42 [notice] 32#32: exiting
+2022/07/01 23:57:42 [notice] 29#29: gracefully shutting down
+2022/07/01 23:57:42 [notice] 29#29: exiting
+2022/07/01 23:57:42 [notice] 33#33: gracefully shutting down
+2022/07/01 23:57:42 [notice] 33#33: exiting
+2022/07/01 23:57:42 [notice] 30#30: exit
+2022/07/01 23:57:42 [notice] 31#31: exit
+2022/07/01 23:57:42 [notice] 32#32: exit
+2022/07/01 23:57:42 [notice] 29#29: exit
+2022/07/01 23:57:42 [notice] 33#33: exit
+2022/07/01 23:57:42 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2022/07/01 23:57:42 [notice] 1#1: worker process 29 exited with code 0
+2022/07/01 23:57:42 [notice] 1#1: worker process 30 exited with code 0
+2022/07/01 23:57:42 [notice] 1#1: worker process 32 exited with code 0
+2022/07/01 23:57:42 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/01 23:57:42 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2022/07/01 23:57:42 [notice] 1#1: worker process 31 exited with code 0
+2022/07/01 23:57:42 [notice] 1#1: worker process 33 exited with code 0
+2022/07/01 23:57:42 [notice] 1#1: exit
+2022/07/02 10:06:37 [emerg] 1#1: cannot load certificate "/etc/ssl/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/ssl/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2022/07/02 10:06:38 [emerg] 1#1: cannot load certificate "/etc/ssl/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/ssl/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2022/07/02 10:06:38 [emerg] 1#1: cannot load certificate "/etc/ssl/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/ssl/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2022/07/02 10:11:14 [notice] 1#1: using the "epoll" event method
+2022/07/02 10:11:14 [notice] 1#1: nginx/1.23.0
+2022/07/02 10:11:14 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/07/02 10:11:14 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2022/07/02 10:11:14 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/07/02 10:11:14 [notice] 1#1: start worker processes
+2022/07/02 10:11:14 [notice] 1#1: start worker process 30
+2022/07/02 10:11:14 [notice] 1#1: start worker process 31
+2022/07/02 10:11:14 [notice] 1#1: start worker process 32
+2022/07/02 10:11:14 [notice] 1#1: start worker process 33
+2022/07/02 10:11:14 [notice] 1#1: start worker process 34
+2022/07/02 10:14:14 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/07/02 10:14:14 [notice] 31#31: gracefully shutting down
+2022/07/02 10:14:14 [notice] 31#31: exiting
+2022/07/02 10:14:14 [notice] 33#33: gracefully shutting down
+2022/07/02 10:14:14 [notice] 32#32: gracefully shutting down
+2022/07/02 10:14:14 [notice] 32#32: exiting
+2022/07/02 10:14:14 [notice] 34#34: gracefully shutting down
+2022/07/02 10:14:14 [notice] 34#34: exiting
+2022/07/02 10:14:14 [notice] 30#30: gracefully shutting down
+2022/07/02 10:14:14 [notice] 30#30: exiting
+2022/07/02 10:14:14 [notice] 31#31: exit
+2022/07/02 10:14:14 [notice] 33#33: exiting
+2022/07/02 10:14:14 [notice] 32#32: exit
+2022/07/02 10:14:14 [notice] 34#34: exit
+2022/07/02 10:14:14 [notice] 30#30: exit
+2022/07/02 10:14:14 [notice] 33#33: exit
+2022/07/02 10:14:14 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2022/07/02 10:14:14 [notice] 1#1: worker process 34 exited with code 0
+2022/07/02 10:14:14 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/02 10:14:14 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2022/07/02 10:14:14 [notice] 1#1: worker process 31 exited with code 0
+2022/07/02 10:14:14 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/02 10:14:14 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2022/07/02 10:14:14 [notice] 1#1: worker process 33 exited with code 0
+2022/07/02 10:14:14 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/02 10:14:14 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2022/07/02 10:14:14 [notice] 1#1: worker process 30 exited with code 0
+2022/07/02 10:14:14 [notice] 1#1: worker process 32 exited with code 0
+2022/07/02 10:14:14 [notice] 1#1: exit
+2022/07/02 10:15:05 [notice] 1#1: using the "epoll" event method
+2022/07/02 10:15:05 [notice] 1#1: nginx/1.23.0
+2022/07/02 10:15:05 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/07/02 10:15:05 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2022/07/02 10:15:05 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/07/02 10:15:05 [notice] 1#1: start worker processes
+2022/07/02 10:15:05 [notice] 1#1: start worker process 30
+2022/07/02 10:15:05 [notice] 1#1: start worker process 31
+2022/07/02 10:15:05 [notice] 1#1: start worker process 32
+2022/07/02 10:15:05 [notice] 1#1: start worker process 33
+2022/07/02 10:15:05 [notice] 1#1: start worker process 34
+2022/07/02 10:28:18 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/07/02 10:28:18 [notice] 33#33: gracefully shutting down
+2022/07/02 10:28:18 [notice] 32#32: gracefully shutting down
+2022/07/02 10:28:18 [notice] 31#31: gracefully shutting down
+2022/07/02 10:28:18 [notice] 34#34: gracefully shutting down
+2022/07/02 10:28:18 [notice] 30#30: gracefully shutting down
+2022/07/02 10:28:18 [notice] 30#30: exiting
+2022/07/02 10:28:18 [notice] 33#33: exiting
+2022/07/02 10:28:18 [notice] 32#32: exiting
+2022/07/02 10:28:18 [notice] 32#32: exit
+2022/07/02 10:28:18 [notice] 31#31: exiting
+2022/07/02 10:28:18 [notice] 34#34: exiting
+2022/07/02 10:28:18 [notice] 30#30: exit
+2022/07/02 10:28:18 [notice] 33#33: exit
+2022/07/02 10:28:18 [notice] 31#31: exit
+2022/07/02 10:28:18 [notice] 34#34: exit
+2022/07/02 10:28:18 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2022/07/02 10:28:18 [notice] 1#1: worker process 33 exited with code 0
+2022/07/02 10:28:18 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/02 10:28:18 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2022/07/02 10:28:18 [notice] 1#1: worker process 30 exited with code 0
+2022/07/02 10:28:18 [notice] 1#1: worker process 31 exited with code 0
+2022/07/02 10:28:18 [notice] 1#1: worker process 32 exited with code 0
+2022/07/02 10:28:18 [notice] 1#1: worker process 34 exited with code 0
+2022/07/02 10:28:18 [notice] 1#1: exit
+2022/07/02 10:43:01 [emerg] 1#1: BIO_new_file("/etc/nginx/dhparam.pem") failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/nginx/dhparam.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2022/07/02 10:43:02 [emerg] 1#1: BIO_new_file("/etc/nginx/dhparam.pem") failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/nginx/dhparam.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2022/07/02 10:43:03 [emerg] 1#1: BIO_new_file("/etc/nginx/dhparam.pem") failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/nginx/dhparam.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2022/07/02 10:43:03 [emerg] 1#1: BIO_new_file("/etc/nginx/dhparam.pem") failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/nginx/dhparam.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2022/07/02 10:43:05 [emerg] 1#1: BIO_new_file("/etc/nginx/dhparam.pem") failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/nginx/dhparam.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2022/07/02 10:43:06 [emerg] 1#1: BIO_new_file("/etc/nginx/dhparam.pem") failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/nginx/dhparam.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2022/07/02 10:43:10 [emerg] 1#1: BIO_new_file("/etc/nginx/dhparam.pem") failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/nginx/dhparam.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2022/07/02 10:43:17 [emerg] 1#1: BIO_new_file("/etc/nginx/dhparam.pem") failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/nginx/dhparam.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2022/07/02 10:43:30 [emerg] 1#1: BIO_new_file("/etc/nginx/dhparam.pem") failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/nginx/dhparam.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2022/07/02 10:44:41 [warn] 1#1: "ssl_stapling" ignored, issuer certificate not found for certificate "/etc/ssl/nginx-selfsigned.crt"
+2022/07/02 10:44:41 [warn] 1#1: "ssl_stapling" ignored, issuer certificate not found for certificate "/etc/ssl/nginx-selfsigned.crt"
+2022/07/02 10:44:41 [notice] 1#1: using the "epoll" event method
+2022/07/02 10:44:41 [notice] 1#1: nginx/1.23.0
+2022/07/02 10:44:41 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/07/02 10:44:41 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2022/07/02 10:44:41 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/07/02 10:44:41 [notice] 1#1: start worker processes
+2022/07/02 10:44:41 [notice] 1#1: start worker process 30
+2022/07/02 10:44:41 [notice] 1#1: start worker process 31
+2022/07/02 10:44:41 [notice] 1#1: start worker process 32
+2022/07/02 10:44:41 [notice] 1#1: start worker process 33
+2022/07/02 10:44:41 [notice] 1#1: start worker process 34
+2022/07/02 10:47:07 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/07/02 10:47:07 [notice] 30#30: gracefully shutting down
+2022/07/02 10:47:07 [notice] 30#30: exiting
+2022/07/02 10:47:07 [notice] 31#31: gracefully shutting down
+2022/07/02 10:47:07 [notice] 32#32: gracefully shutting down
+2022/07/02 10:47:07 [notice] 32#32: exiting
+2022/07/02 10:47:07 [notice] 34#34: gracefully shutting down
+2022/07/02 10:47:07 [notice] 34#34: exiting
+2022/07/02 10:47:07 [notice] 33#33: gracefully shutting down
+2022/07/02 10:47:07 [notice] 33#33: exiting
+2022/07/02 10:47:07 [notice] 30#30: exit
+2022/07/02 10:47:07 [notice] 31#31: exiting
+2022/07/02 10:47:07 [notice] 32#32: exit
+2022/07/02 10:47:07 [notice] 34#34: exit
+2022/07/02 10:47:07 [notice] 33#33: exit
+2022/07/02 10:47:07 [notice] 31#31: exit
+2022/07/02 10:47:07 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2022/07/02 10:47:07 [notice] 1#1: worker process 30 exited with code 0
+2022/07/02 10:47:07 [notice] 1#1: worker process 32 exited with code 0
+2022/07/02 10:47:07 [notice] 1#1: worker process 34 exited with code 0
+2022/07/02 10:47:07 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/02 10:47:07 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2022/07/02 10:47:07 [notice] 1#1: worker process 31 exited with code 0
+2022/07/02 10:47:07 [notice] 1#1: worker process 33 exited with code 0
+2022/07/02 10:47:07 [notice] 1#1: exit
+2022/07/02 10:47:34 [warn] 1#1: "ssl_stapling" ignored, issuer certificate not found for certificate "/etc/ssl/nginx-selfsigned.crt"
+2022/07/02 10:47:34 [warn] 1#1: "ssl_stapling" ignored, issuer certificate not found for certificate "/etc/ssl/nginx-selfsigned.crt"
+2022/07/02 10:47:34 [notice] 1#1: using the "epoll" event method
+2022/07/02 10:47:34 [notice] 1#1: nginx/1.23.0
+2022/07/02 10:47:34 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/07/02 10:47:34 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2022/07/02 10:47:34 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/07/02 10:47:34 [notice] 1#1: start worker processes
+2022/07/02 10:47:34 [notice] 1#1: start worker process 30
+2022/07/02 10:47:34 [notice] 1#1: start worker process 31
+2022/07/02 10:47:34 [notice] 1#1: start worker process 32
+2022/07/02 10:47:34 [notice] 1#1: start worker process 33
+2022/07/02 10:47:34 [notice] 1#1: start worker process 34
+2022/07/02 10:52:08 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/07/02 10:52:08 [notice] 30#30: gracefully shutting down
+2022/07/02 10:52:08 [notice] 31#31: gracefully shutting down
+2022/07/02 10:52:08 [notice] 31#31: exiting
+2022/07/02 10:52:08 [notice] 34#34: gracefully shutting down
+2022/07/02 10:52:08 [notice] 34#34: exiting
+2022/07/02 10:52:08 [notice] 32#32: gracefully shutting down
+2022/07/02 10:52:08 [notice] 32#32: exiting
+2022/07/02 10:52:08 [notice] 33#33: gracefully shutting down
+2022/07/02 10:52:08 [notice] 33#33: exiting
+2022/07/02 10:52:08 [notice] 30#30: exiting
+2022/07/02 10:52:08 [notice] 31#31: exit
+2022/07/02 10:52:08 [notice] 34#34: exit
+2022/07/02 10:52:08 [notice] 32#32: exit
+2022/07/02 10:52:08 [notice] 33#33: exit
+2022/07/02 10:52:08 [notice] 30#30: exit
+2022/07/02 10:52:08 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2022/07/02 10:52:08 [notice] 1#1: worker process 31 exited with code 0
+2022/07/02 10:52:08 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/02 10:52:08 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2022/07/02 10:52:08 [notice] 1#1: worker process 32 exited with code 0
+2022/07/02 10:52:08 [notice] 1#1: worker process 34 exited with code 0
+2022/07/02 10:52:08 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/02 10:52:08 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2022/07/02 10:52:08 [notice] 1#1: worker process 30 exited with code 0
+2022/07/02 10:52:08 [notice] 1#1: worker process 33 exited with code 0
+2022/07/02 10:52:08 [notice] 1#1: exit
+2022/07/02 10:52:12 [emerg] 1#1: "ssl_dhparam" directive is duplicate in /etc/nginx/snippets/ssl-params.conf:22
+2022/07/02 10:52:13 [emerg] 1#1: "ssl_dhparam" directive is duplicate in /etc/nginx/snippets/ssl-params.conf:22
+2022/07/02 10:52:13 [emerg] 1#1: "ssl_dhparam" directive is duplicate in /etc/nginx/snippets/ssl-params.conf:22
+2022/07/02 10:52:14 [emerg] 1#1: "ssl_dhparam" directive is duplicate in /etc/nginx/snippets/ssl-params.conf:22
+2022/07/02 10:52:15 [emerg] 1#1: "ssl_dhparam" directive is duplicate in /etc/nginx/snippets/ssl-params.conf:22
+2022/07/02 10:52:17 [emerg] 1#1: "ssl_dhparam" directive is duplicate in /etc/nginx/snippets/ssl-params.conf:22
+2022/07/02 10:52:20 [emerg] 1#1: "ssl_dhparam" directive is duplicate in /etc/nginx/snippets/ssl-params.conf:22
+2022/07/02 10:52:27 [emerg] 1#1: "ssl_dhparam" directive is duplicate in /etc/nginx/snippets/ssl-params.conf:22
+2022/07/02 10:52:35 [warn] 1#1: "ssl_stapling" ignored, issuer certificate not found for certificate "/etc/ssl/nginx-selfsigned.crt"
+2022/07/02 10:52:35 [warn] 1#1: "ssl_stapling" ignored, issuer certificate not found for certificate "/etc/ssl/nginx-selfsigned.crt"
+2022/07/02 10:52:35 [notice] 1#1: using the "epoll" event method
+2022/07/02 10:52:35 [notice] 1#1: nginx/1.23.0
+2022/07/02 10:52:35 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/07/02 10:52:35 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2022/07/02 10:52:35 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/07/02 10:52:35 [notice] 1#1: start worker processes
+2022/07/02 10:52:35 [notice] 1#1: start worker process 30
+2022/07/02 10:52:35 [notice] 1#1: start worker process 31
+2022/07/02 10:52:35 [notice] 1#1: start worker process 32
+2022/07/02 10:52:35 [notice] 1#1: start worker process 33
+2022/07/02 10:52:35 [notice] 1#1: start worker process 34
+2022/07/04 12:06:46 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/07/04 12:06:46 [notice] 32#32: gracefully shutting down
+2022/07/04 12:06:46 [notice] 32#32: exiting
+2022/07/04 12:06:46 [notice] 34#34: gracefully shutting down
+2022/07/04 12:06:46 [notice] 30#30: gracefully shutting down
+2022/07/04 12:06:46 [notice] 33#33: gracefully shutting down
+2022/07/04 12:06:46 [notice] 31#31: gracefully shutting down
+2022/07/04 12:06:46 [notice] 31#31: exiting
+2022/07/04 12:06:46 [notice] 32#32: exit
+2022/07/04 12:06:46 [notice] 34#34: exiting
+2022/07/04 12:06:46 [notice] 30#30: exiting
+2022/07/04 12:06:46 [notice] 33#33: exiting
+2022/07/04 12:06:46 [notice] 31#31: exit
+2022/07/04 12:06:46 [notice] 34#34: exit
+2022/07/04 12:06:46 [notice] 30#30: exit
+2022/07/04 12:06:46 [notice] 33#33: exit
+2022/07/04 12:06:46 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2022/07/04 12:06:46 [notice] 1#1: worker process 30 exited with code 0
+2022/07/04 12:06:46 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/04 12:06:46 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2022/07/04 12:06:46 [notice] 1#1: worker process 33 exited with code 0
+2022/07/04 12:06:46 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/04 12:06:46 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2022/07/04 12:06:46 [notice] 1#1: worker process 32 exited with code 0
+2022/07/04 12:06:46 [notice] 1#1: worker process 34 exited with code 0
+2022/07/04 12:06:46 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/04 12:06:46 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2022/07/04 12:06:46 [notice] 1#1: worker process 31 exited with code 0
+2022/07/04 12:06:46 [notice] 1#1: exit
+2022/07/05 11:58:10 [warn] 1#1: "ssl_stapling" ignored, issuer certificate not found for certificate "/etc/ssl/nginx-selfsigned.crt"
+2022/07/05 11:58:10 [warn] 1#1: "ssl_stapling" ignored, issuer certificate not found for certificate "/etc/ssl/nginx-selfsigned.crt"
+2022/07/05 11:58:10 [notice] 1#1: using the "epoll" event method
+2022/07/05 11:58:10 [notice] 1#1: nginx/1.23.0
+2022/07/05 11:58:10 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/07/05 11:58:10 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2022/07/05 11:58:10 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/07/05 11:58:10 [notice] 1#1: start worker processes
+2022/07/05 11:58:10 [notice] 1#1: start worker process 30
+2022/07/05 11:58:10 [notice] 1#1: start worker process 31
+2022/07/05 11:58:10 [notice] 1#1: start worker process 32
+2022/07/05 11:58:10 [notice] 1#1: start worker process 33
+2022/07/05 11:58:10 [notice] 1#1: start worker process 34
+2022/07/05 11:58:49 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/07/05 11:58:49 [notice] 30#30: gracefully shutting down
+2022/07/05 11:58:49 [notice] 30#30: exiting
+2022/07/05 11:58:49 [notice] 33#33: gracefully shutting down
+2022/07/05 11:58:49 [notice] 33#33: exiting
+2022/07/05 11:58:49 [notice] 32#32: gracefully shutting down
+2022/07/05 11:58:49 [notice] 32#32: exiting
+2022/07/05 11:58:49 [notice] 34#34: gracefully shutting down
+2022/07/05 11:58:49 [notice] 34#34: exiting
+2022/07/05 11:58:49 [notice] 31#31: gracefully shutting down
+2022/07/05 11:58:49 [notice] 31#31: exiting
+2022/07/05 11:58:49 [notice] 30#30: exit
+2022/07/05 11:58:49 [notice] 33#33: exit
+2022/07/05 11:58:49 [notice] 32#32: exit
+2022/07/05 11:58:49 [notice] 34#34: exit
+2022/07/05 11:58:49 [notice] 31#31: exit
+2022/07/05 11:58:49 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2022/07/05 11:58:49 [notice] 1#1: worker process 33 exited with code 0
+2022/07/05 11:58:49 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/05 11:58:49 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2022/07/05 11:58:49 [notice] 1#1: worker process 30 exited with code 0
+2022/07/05 11:58:49 [notice] 1#1: worker process 32 exited with code 0
+2022/07/05 11:58:49 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/05 11:58:49 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2022/07/05 11:58:49 [notice] 1#1: worker process 34 exited with code 0
+2022/07/05 11:58:49 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/05 11:58:49 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2022/07/05 11:58:49 [notice] 1#1: worker process 31 exited with code 0
+2022/07/05 11:58:49 [notice] 1#1: exit
+2022/07/05 12:01:15 [warn] 1#1: "ssl_stapling" ignored, issuer certificate not found for certificate "/etc/ssl/nginx-selfsigned.crt"
+2022/07/05 12:01:15 [warn] 1#1: "ssl_stapling" ignored, issuer certificate not found for certificate "/etc/ssl/nginx-selfsigned.crt"
+2022/07/05 12:01:15 [notice] 1#1: using the "epoll" event method
+2022/07/05 12:01:15 [notice] 1#1: nginx/1.23.0
+2022/07/05 12:01:15 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/07/05 12:01:15 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2022/07/05 12:01:15 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/07/05 12:01:15 [notice] 1#1: start worker processes
+2022/07/05 12:01:15 [notice] 1#1: start worker process 30
+2022/07/05 12:01:15 [notice] 1#1: start worker process 31
+2022/07/05 12:01:15 [notice] 1#1: start worker process 32
+2022/07/05 12:01:15 [notice] 1#1: start worker process 33
+2022/07/05 12:01:15 [notice] 1#1: start worker process 34
+2022/07/05 12:14:44 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/07/05 12:14:44 [notice] 32#32: gracefully shutting down
+2022/07/05 12:14:44 [notice] 32#32: exiting
+2022/07/05 12:14:44 [notice] 34#34: gracefully shutting down
+2022/07/05 12:14:44 [notice] 34#34: exiting
+2022/07/05 12:14:44 [notice] 31#31: gracefully shutting down
+2022/07/05 12:14:44 [notice] 30#30: gracefully shutting down
+2022/07/05 12:14:44 [notice] 30#30: exiting
+2022/07/05 12:14:44 [notice] 33#33: gracefully shutting down
+2022/07/05 12:14:44 [notice] 33#33: exiting
+2022/07/05 12:14:44 [notice] 32#32: exit
+2022/07/05 12:14:44 [notice] 34#34: exit
+2022/07/05 12:14:44 [notice] 31#31: exiting
+2022/07/05 12:14:44 [notice] 30#30: exit
+2022/07/05 12:14:44 [notice] 33#33: exit
+2022/07/05 12:14:44 [notice] 31#31: exit
+2022/07/05 12:14:44 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2022/07/05 12:14:44 [notice] 1#1: worker process 31 exited with code 0
+2022/07/05 12:14:44 [notice] 1#1: worker process 32 exited with code 0
+2022/07/05 12:14:44 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/05 12:14:44 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2022/07/05 12:14:44 [notice] 1#1: worker process 30 exited with code 0
+2022/07/05 12:14:44 [notice] 1#1: worker process 33 exited with code 0
+2022/07/05 12:14:44 [notice] 1#1: worker process 34 exited with code 0
+2022/07/05 12:14:44 [notice] 1#1: exit
+2022/07/05 12:14:54 [warn] 1#1: "ssl_stapling" ignored, issuer certificate not found for certificate "/etc/ssl/nginx-selfsigned.crt"
+2022/07/05 12:14:54 [warn] 1#1: "ssl_stapling" ignored, issuer certificate not found for certificate "/etc/ssl/nginx-selfsigned.crt"
+2022/07/05 12:14:54 [notice] 1#1: using the "epoll" event method
+2022/07/05 12:14:54 [notice] 1#1: nginx/1.23.0
+2022/07/05 12:14:54 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/07/05 12:14:54 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2022/07/05 12:14:54 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/07/05 12:14:54 [notice] 1#1: start worker processes
+2022/07/05 12:14:54 [notice] 1#1: start worker process 30
+2022/07/05 12:14:54 [notice] 1#1: start worker process 31
+2022/07/05 12:14:54 [notice] 1#1: start worker process 32
+2022/07/05 12:14:54 [notice] 1#1: start worker process 33
+2022/07/05 12:14:54 [notice] 1#1: start worker process 34
+2022/07/05 12:16:51 [warn] 1#1: "ssl_stapling" ignored, issuer certificate not found for certificate "/etc/ssl/nginx-selfsigned.crt"
+2022/07/05 12:16:51 [warn] 1#1: "ssl_stapling" ignored, issuer certificate not found for certificate "/etc/ssl/nginx-selfsigned.crt"
+2022/07/05 12:16:51 [notice] 1#1: using the "epoll" event method
+2022/07/05 12:16:51 [notice] 1#1: nginx/1.23.0
+2022/07/05 12:16:51 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/07/05 12:16:51 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2022/07/05 12:16:51 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/07/05 12:16:51 [notice] 1#1: start worker processes
+2022/07/05 12:16:51 [notice] 1#1: start worker process 30
+2022/07/05 12:16:51 [notice] 1#1: start worker process 31
+2022/07/05 12:16:51 [notice] 1#1: start worker process 32
+2022/07/05 12:16:51 [notice] 1#1: start worker process 33
+2022/07/05 12:16:51 [notice] 1#1: start worker process 34
+2022/07/05 12:19:15 [warn] 1#1: "ssl_stapling" ignored, issuer certificate not found for certificate "/etc/ssl/nginx-selfsigned.crt"
+2022/07/05 12:19:15 [warn] 1#1: "ssl_stapling" ignored, issuer certificate not found for certificate "/etc/ssl/nginx-selfsigned.crt"
+2022/07/05 12:19:15 [notice] 1#1: using the "epoll" event method
+2022/07/05 12:19:15 [notice] 1#1: nginx/1.23.0
+2022/07/05 12:19:15 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/07/05 12:19:15 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2022/07/05 12:19:15 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/07/05 12:19:15 [notice] 1#1: start worker processes
+2022/07/05 12:19:15 [notice] 1#1: start worker process 30
+2022/07/05 12:19:15 [notice] 1#1: start worker process 31
+2022/07/05 12:19:15 [notice] 1#1: start worker process 32
+2022/07/05 12:19:15 [notice] 1#1: start worker process 33
+2022/07/05 12:19:15 [notice] 1#1: start worker process 34
+2022/07/05 12:21:15 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/07/05 12:21:15 [notice] 33#33: gracefully shutting down
+2022/07/05 12:21:15 [notice] 33#33: exiting
+2022/07/05 12:21:15 [notice] 31#31: gracefully shutting down
+2022/07/05 12:21:15 [notice] 31#31: exiting
+2022/07/05 12:21:15 [notice] 32#32: gracefully shutting down
+2022/07/05 12:21:15 [notice] 32#32: exiting
+2022/07/05 12:21:15 [notice] 30#30: gracefully shutting down
+2022/07/05 12:21:15 [notice] 30#30: exiting
+2022/07/05 12:21:15 [notice] 34#34: gracefully shutting down
+2022/07/05 12:21:15 [notice] 33#33: exit
+2022/07/05 12:21:15 [notice] 31#31: exit
+2022/07/05 12:21:15 [notice] 32#32: exit
+2022/07/05 12:21:15 [notice] 30#30: exit
+2022/07/05 12:21:15 [notice] 34#34: exiting
+2022/07/05 12:21:15 [notice] 34#34: exit
+2022/07/05 12:21:15 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2022/07/05 12:21:15 [notice] 1#1: worker process 30 exited with code 0
+2022/07/05 12:21:15 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/05 12:21:15 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2022/07/05 12:21:15 [notice] 1#1: worker process 31 exited with code 0
+2022/07/05 12:21:15 [notice] 1#1: worker process 32 exited with code 0
+2022/07/05 12:21:15 [notice] 1#1: worker process 33 exited with code 0
+2022/07/05 12:21:15 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2022/07/05 12:21:15 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/05 12:21:15 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2022/07/05 12:21:15 [notice] 1#1: worker process 34 exited with code 0
+2022/07/05 12:21:15 [notice] 1#1: exit
+2022/07/05 12:22:31 [warn] 1#1: "ssl_stapling" ignored, issuer certificate not found for certificate "/etc/ssl/nginx-selfsigned.crt"
+2022/07/05 12:22:31 [warn] 1#1: "ssl_stapling" ignored, issuer certificate not found for certificate "/etc/ssl/nginx-selfsigned.crt"
+2022/07/05 12:22:31 [notice] 1#1: using the "epoll" event method
+2022/07/05 12:22:31 [notice] 1#1: nginx/1.23.0
+2022/07/05 12:22:31 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/07/05 12:22:31 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2022/07/05 12:22:31 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/07/05 12:22:31 [notice] 1#1: start worker processes
+2022/07/05 12:22:31 [notice] 1#1: start worker process 30
+2022/07/05 12:22:31 [notice] 1#1: start worker process 31
+2022/07/05 12:22:31 [notice] 1#1: start worker process 32
+2022/07/05 12:22:31 [notice] 1#1: start worker process 33
+2022/07/05 12:22:31 [notice] 1#1: start worker process 34
+2022/07/05 12:23:34 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/07/05 12:23:34 [notice] 32#32: gracefully shutting down
+2022/07/05 12:23:34 [notice] 30#30: gracefully shutting down
+2022/07/05 12:23:34 [notice] 30#30: exiting
+2022/07/05 12:23:34 [notice] 33#33: gracefully shutting down
+2022/07/05 12:23:34 [notice] 33#33: exiting
+2022/07/05 12:23:34 [notice] 34#34: gracefully shutting down
+2022/07/05 12:23:34 [notice] 34#34: exiting
+2022/07/05 12:23:34 [notice] 31#31: gracefully shutting down
+2022/07/05 12:23:34 [notice] 32#32: exiting
+2022/07/05 12:23:34 [notice] 32#32: exit
+2022/07/05 12:23:34 [notice] 30#30: exit
+2022/07/05 12:23:34 [notice] 33#33: exit
+2022/07/05 12:23:34 [notice] 34#34: exit
+2022/07/05 12:23:34 [notice] 31#31: exiting
+2022/07/05 12:23:34 [notice] 31#31: exit
+2022/07/05 12:23:34 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2022/07/05 12:23:34 [notice] 1#1: worker process 30 exited with code 0
+2022/07/05 12:23:34 [notice] 1#1: worker process 32 exited with code 0
+2022/07/05 12:23:34 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/05 12:23:34 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2022/07/05 12:23:34 [notice] 1#1: worker process 31 exited with code 0
+2022/07/05 12:23:34 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/05 12:23:34 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2022/07/05 12:23:34 [notice] 1#1: worker process 34 exited with code 0
+2022/07/05 12:23:34 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/05 12:23:34 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2022/07/05 12:23:34 [notice] 1#1: worker process 33 exited with code 0
+2022/07/05 12:23:34 [notice] 1#1: exit
